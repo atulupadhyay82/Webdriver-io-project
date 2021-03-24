@@ -4,7 +4,7 @@
   "description": "This is webdriver io scripts ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "wdio run wdio.conf.js"
   },
   "author": "Atul Upadhyay",
   "license": "ISC",
