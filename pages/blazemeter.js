@@ -9,10 +9,13 @@ class BlazePage{
     }
 
     get getTextForLiNav(){
-        return this.childElementsNav.filter(element =>{
-            //console.log(element);
+        this.childElementsNav.filter(element =>{
             console.log(element.getText());
         });
+    }
+
+    specificChildElement(index){
+        console.log(this.parentNav.$(`li:nth-child(${index})`).getText());
     }
 
     get useCaseElements(){
