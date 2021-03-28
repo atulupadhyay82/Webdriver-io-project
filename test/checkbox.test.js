@@ -11,7 +11,7 @@ describe("handling checkboxes", function(){
         expect(text).equals("Checkboxes");
     }),
 
-    it("shoule click checkbox",function(){
+    it("should click checkbox",function(){
         browser.url('https://the-internet.herokuapp.com/');
         internetPage.clickOnLink(6);
         internetPage.h3Header.waitForDisplayed();
