@@ -1,3 +1,6 @@
+/**
+ *  Run only this specs- npm test -- --spec .\test\draggable.test.js
+ */
 describe("drag and drop actions",() =>{
 
     it("do drag and drop", () => {
