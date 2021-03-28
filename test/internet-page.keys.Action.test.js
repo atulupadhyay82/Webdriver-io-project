@@ -11,6 +11,7 @@ describe("Keys action handle",() =>{
 
     it("Keys Action perform", () =>{
         browser.url('https://the-internet.herokuapp.com/key_presses');
+        browser.maximizeWindow();
         keysAction.enterSearch("Tab");
         const text= keysAction.resultLabelText;
         browser.pause(4000);
