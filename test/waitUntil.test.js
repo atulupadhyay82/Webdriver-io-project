@@ -1,5 +1,8 @@
 const { assert } = require("chai");
 
+/**
+ * No page I have created for this test
+ */
 describe("waitUntil method handle", ()=>{
 
     it("simple wait using browser.pause()", () => {
@@ -27,7 +30,7 @@ describe("waitUntil method handle", ()=>{
 
         const header= $('h1.private-page_title');
         browser.waitUntil(
-            () => email.getText() === 'Sales Dashboard',
+            () => email.getText() === 'Sales Dashboard' && browser.getTitle() ==='Report Dashboard',
             {
                 timeout: 6000,
                 timeoutMsg: 'expected header to be visible after 6s'
