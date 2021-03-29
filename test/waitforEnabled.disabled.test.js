@@ -1,5 +1,8 @@
 const { assert } = require("chai");
 
+/**
+ * No page object for this test, can be created.
+ */
 describe("wait for enabled case",() => {
 
     it("should wait for button to be enabled",() => {
