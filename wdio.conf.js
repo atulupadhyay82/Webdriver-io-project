@@ -1,3 +1,13 @@
+const url= require("./urls")
+const ENV= process.env.ENV
+
+if(!ENV || !['qa','stage','prod','dev'].includes(ENV)){
+    console.log("the entered environment is "+['qa','stage','prod','dev'].includes(`${ENV}`)+ ENV);
+    console.log("Please pass correct env value : ENV=qa|dev|stage|prod");
+    process.exit();
+}
+
+
 exports.config = {
     //
     // ====================
@@ -97,7 +107,8 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://www.amazon.ca/',
+   // baseUrl: 'https://www.amazon.ca/',
+   baseUrl: url[ENV],
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
