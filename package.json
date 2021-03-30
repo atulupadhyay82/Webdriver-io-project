@@ -6,7 +6,8 @@
   "scripts": {
     "test": "wdio run wdio.conf.js",
     "elements": "./node_modules/.bin/wdio ./wdio.conf.js --suite elements",
-    "waits": "./node_modules/.bin/wdio ./wdio.conf.js --suite waits"
+    "waits": "./node_modules/.bin/wdio ./wdio.conf.js --suite waits",
+    "dataDriven": "./node_modules/.bin/wdio ./wdio.conf.js --suite dataDriven"
   },
   "author": "Atul Upadhyay",
   "license": "ISC",

@@ -22,7 +22,8 @@ exports.config = {
 
     suites:{
         elements:['./test/elements/*.js'],
-        waits: ['./test/waits/*.js']
+        waits: ['./test/waits/*.js'],
+        dataDriven: ['./test/dataDrivenTest/*.js']
 
     },
     // Patterns to exclude.
