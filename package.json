@@ -4,7 +4,9 @@
   "description": "This is webdriver io scripts ",
   "main": "index.js",
   "scripts": {
-    "test": "wdio run wdio.conf.js"
+    "test": "wdio run wdio.conf.js",
+    "elements": "./node_modules/.bin/wdio ./wdio.conf.js --suite elements",
+    "waits": "./node_modules/.bin/wdio ./wdio.conf.js --suite waits"
   },
   "author": "Atul Upadhyay",
   "license": "ISC",
@@ -23,6 +25,7 @@
     "webdriverio": "^7.2.3"
   },
   "dependencies": {
-    "@wdio/cli": "^7.2.3"
+    "@wdio/cli": "^7.2.3",
+    "allure-commandline": "^2.13.8"
   }
 }

@@ -1,5 +1,5 @@
 const { assert } = require("chai");
-const alertPage= require("../pages/internet-page.Alerts")
+const alertPage= require("../../pages/internet-page.Alerts")
 
 describe("Handling alert pop ups", () => {
 
